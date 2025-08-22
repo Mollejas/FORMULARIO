@@ -1,0 +1,272 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid #000;
+    padding: 5px;
+    text-align: center;
+}
+
+td {
+    border: 1px solid #000;
+    padding: 5px;
+    text-align: right;
+}
+
+thead th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.th2 {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+thead th[colspan="4"] {
+    text-align: center;
+}
+
+.form-table td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+
+.form-table td[colspan="2"] {
+    text-align: center;
+}
+
+.form-table td[rowspan="3"] {
+    vertical-align: top;
+    text-align: center;
+}
+
+.gasolina {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.tanque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tanque label {
+    margin-bottom: 5px;
+}
+
+.parte3 td {
+    text-align: left;
+}
+
+.parte3 th {
+    text-align: left;
+}
+
+.gasolina {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.espacio {
+    height: 15px;
+}
+
+.input-textarea {
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #000;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    resize: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+}
+
+.note {
+    font-size: 12px;
+    color: red;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 0.5fr);
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+.grid-item2Col {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+    width: 100%;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1px;
+}
+
+.grid-item2Row {
+    grid-row: span 2;
+}
+
+.grid-item3Row {
+    grid-row: span 3;
+
+}
+
+.icon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icon-item {
+    width: 60px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+}
+
+.icon-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.icon-item input {
+    margin-top: 5px;
+}
+
+.tabla_liquido th {
+    border: 0px;
+    padding: 2px;
+    text-align: center;
+}
+
+.tabla_liquido td {
+    border: 0px;
+    padding: 2px;
+    text-align: left;
+}
+
+.section-title,
+.section-title2 {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.caucho1,
+.caucho2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.caucho-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.caucho-item div {
+    flex: 1;
+}
+
+.caucho-item img {
+    width: 35px;
+}
+
+@media print {
+    @page {
+        size: A4;
+        margin: 0;
+    }
+
+    body {
+        margin: 10px 0 0 0;
+        zoom: 48%;
+    }
+
+    header,
+    footer,
+    nav,
+    h1,
+    button {
+        display: none;
+    }
+
+    input {
+        border: none;
+        outline: none;
+        box-shadow: none;
+        background: none;
+    }
+
+    .input-textarea {
+        margin-top: 5px;
+    }
+
+    .table {
+        margin-bottom: 0;
+    }
+
+    .espacio {
+        height: 0;
+    }
+
+    .section-title {
+        height: 15PX;
+    }
+
+    .section-title,
+    .section-title2 {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin: 0;
+
+    }
+
+    .grid-container {
+        height: 680px;
+    }
+
+    p {
+        margin: 0;
+    }
+}
